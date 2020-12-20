@@ -4,7 +4,7 @@ MAINTAINER sorush.kh68@gmail.com
 RUN apt-get update -y
 RUN apt-get install python3-pip -y
 RUN apt-get install -y apt-utils
-RUN apt-get install python3-gunicorn -y
+RUN apt-get install gunicorn3
 
 COPY requirements.txt requirements.txt
 COPY ./ /opt/
