@@ -6,3 +6,6 @@ app = Flask(__name__)
 def health():
     return 'pong'
 
+@app.route('/hello')
+def hello():
+    return 'This is an app served with gunicorn.'
