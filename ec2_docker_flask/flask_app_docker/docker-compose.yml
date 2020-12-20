@@ -5,5 +5,5 @@ services:
     build: ./flask_app
 #    ports:
 #      - '8000:8000'
-    network_mode: bridge
+    network_mode: host
 
