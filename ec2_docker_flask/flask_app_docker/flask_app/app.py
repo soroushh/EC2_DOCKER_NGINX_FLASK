@@ -24,4 +24,4 @@ def hey():
 
 @app.route('/test')
 def test():
-    return jsonify({'MESSAGE': 'THIS IS A TEST VIEW.'})
+    return jsonify({'MESSAGE': 'THIS IS A FINAL TEST VIEW.'})
