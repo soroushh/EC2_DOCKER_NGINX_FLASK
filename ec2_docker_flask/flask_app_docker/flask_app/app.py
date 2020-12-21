@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, redirect, jsonify
+from flask import Flask, render_template, url_for, redirect, jsonify, make_response
 
 app = Flask(__name__)
 
@@ -12,4 +12,7 @@ def hello():
 
 @app.route('/real')
 def real_endpoint():
-    return jsonify({'message': 'This is the real endpoint.'})
+    response = jsonify({'message': 'This is the real endpoint.'})
+    corrected_response = make_response(response)
+    corrected_response.set_cookie('name', 'Soroush')
+    return corrected_response
