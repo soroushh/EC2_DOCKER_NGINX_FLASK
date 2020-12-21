@@ -16,3 +16,7 @@ def real_endpoint():
     corrected_response = make_response(response)
     corrected_response.set_cookie('name', 'Soroush')
     return corrected_response
+
+@app.route('/hey')
+def hey():
+    return jsonify({'message': 'hey man.'})
