@@ -8,8 +8,6 @@ services:
   nginx:
     build: ./nginx
     container_name: nginx
-    environment:
-      - SERVER_NAME=3.250.41.107
     restart: always
     ports:
       - '80:80'
