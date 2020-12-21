@@ -12,7 +12,7 @@ services:
     build: ./nginx
     container_name: nginx
     environment:
-      - SERVER_NAME=34.241.34.97
+      - SERVER_NAME=3.250.41.107
     restart: always
     network_mode: bridge
 
