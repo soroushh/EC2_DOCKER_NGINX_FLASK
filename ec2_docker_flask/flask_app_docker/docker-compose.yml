@@ -4,6 +4,6 @@ services:
   flaskapp:
     build: ./flask_app
     ports:
-      - '9000:8000'
+      - '80:8000'
     network_mode: bridge
 
