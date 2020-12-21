@@ -20,3 +20,8 @@ def real_endpoint():
 @app.route('/hoy')
 def hey():
     return jsonify({'message': 'hey man.'})
+
+
+@app.route('/test')
+def test():
+    return jsonify({'MESSAGE': 'THIS IS A TEST VIEW.'})
