@@ -6,7 +6,7 @@ services:
     container_name: app
 #    ports:
 #      - '8000:8000'
-    network_mode: bridge
+#    network_mode: bridge
     networks:
       - first
 
@@ -18,7 +18,7 @@ services:
     restart: always
     ports:
       - '80:80'
-    network_mode: bridge
+#    network_mode: bridge
     networks:
       - first
 
