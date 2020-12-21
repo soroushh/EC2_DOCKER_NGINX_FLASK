@@ -4,8 +4,6 @@ services:
   flaskapp:
     build: ./flask_app
     container_name: app
-#    networks:
-#      - first
 
   nginx:
     build: ./nginx
@@ -15,9 +13,4 @@ services:
     restart: always
     ports:
       - '80:80'
-#    networks:
-#      - first
-#
-#networks:
-#  first:
 
