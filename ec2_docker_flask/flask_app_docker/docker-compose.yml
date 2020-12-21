@@ -14,5 +14,7 @@ services:
     environment:
       - SERVER_NAME=3.250.41.107
     restart: always
+    ports:
+      - '80:80'
     network_mode: bridge
 
