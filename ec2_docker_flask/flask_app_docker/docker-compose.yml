@@ -14,5 +14,5 @@ services:
     environment:
       - SERVER_NAME=34.241.34.97
     restart: always
-    network_mode: host
+    network_mode: bridge
 
